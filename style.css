@@ -1,3 +1,28 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+}
+.list{
+color: aqua;
+
+}
+.part{
+    display: inline-block;
+    background-color: rgb(3, 3, 3);
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    
+}
+.part:hover{
+    background-color: rgb(110, 14, 7);
+}
+.logo{
+    display:block; 
+    margin: 0;
+    text-decoration: none;
+}
 .box{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -41,6 +66,7 @@
         margin: 2px;
         
     }
+    
 }
 
 @media (max-width: 1024px) {
@@ -61,6 +87,9 @@
         margin: 2px;
         
     }
+    .menu{
+        display: none;  
+    }
 }
 @media (max-width: 700px) {
     .box{
@@ -79,5 +108,8 @@
         border: 1px solid rgb(23, 20, 204);
         margin: 2px;
         
+    }
+    .menu{
+        display: none;  
     }
 }
