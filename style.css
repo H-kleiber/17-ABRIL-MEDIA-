@@ -9,6 +9,38 @@
     width: 200px;   
     height: 200px;
     border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 40%;
+    height: 40px;
+    background-color: black;
+    border: 1px solid white;
+    color: aqua;
+    margin: 5px;
+    
+}
+@media (max-width: 1200px) {
+    .box{
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    .caja{
+        background-color: rgb(24, 104, 14);
+        display: flex;
+        justify-content: end;
+
+    }
+    .item{
+        width: 50%;
+        height: 40px;
+        background-color: black;
+        color: aliceblue;
+        border: 1px solid white;
+        margin: 2px;
+        
+    }
 }
 
 @media (max-width: 1024px) {
@@ -18,6 +50,16 @@
     }
     .caja{
         background-color: rgb(247, 0, 255);
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .item{
+        width: 100%;
+        height: 40px;
+        background-color: rgb(207, 74, 74);
+        border: 1px solid white;
+        margin: 2px;
+        
     }
 }
 @media (max-width: 700px) {
@@ -27,5 +69,15 @@
     }
     .caja{
         background-color: rgb(21, 255, 0);
+        display: flex;
+        justify-content:space-around;
+    }
+    .item{
+        width: 10%;
+        height: 40px;
+        background-color: rgb(74, 207, 85);
+        border: 1px solid rgb(23, 20, 204);
+        margin: 2px;
+        
     }
 }
