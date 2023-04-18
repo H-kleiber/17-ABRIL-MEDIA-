@@ -1,0 +1,31 @@
+.box{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+}
+.caja{
+    background-color: crimson;
+    width: 200px;   
+    height: 200px;
+    border: 1px solid;
+}
+
+@media (max-width: 1024px) {
+    .box{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .caja{
+        background-color: rgb(247, 0, 255);
+    }
+}
+@media (max-width: 700px) {
+    .box{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .caja{
+        background-color: rgb(21, 255, 0);
+    }
+}
